@@ -1,0 +1,33 @@
+{
+  "name": "permit.io",
+  "version": "1.0.0",
+  "description": "Permit.io setup for RBAC and ABAC with resources (account, user, notification, system, company), roles (system-administrator, system-owner, privileged-system-user, user), user sets, and condition-based access control",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "permit-setup": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "horaion": "node src/horaion-setup.js",
+    "horaion:verify": "node src/horaion-setup.js --verify",
+    "horaion:user-sets": "node src/horaion-setup.js --user-sets",
+    "horaion:add-user-set": "node src/horaion-setup.js --add-user-set",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "permit.io",
+    "rbac",
+    "abac",
+    "authorization",
+    "access-control"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@inquirer/prompts": "^7.0.0",
+    "chalk": "^5.3.0",
+    "commander": "^13.0.0",
+    "dotenv": "^16.4.0"
+  }
+}
